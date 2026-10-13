@@ -1,0 +1,13 @@
+name: macOS checks
+on:
+  push:
+  pull_request:
+jobs:
+  test-and-build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run core tests
+        run: swift test
+      - name: Build app bundle
+        run: ./scripts/build-app.sh

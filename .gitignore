@@ -1,0 +1,38 @@
+# macOS metadata
+.DS_Store
+._*
+
+# Swift / Xcode build outputs and local caches
+.build/
+.swiftpm/
+DerivedData/
+build/
+module-cache/
+
+# Xcode per-user settings (keep shared schemes and project files)
+xcuserdata/
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+
+# Local editor configuration
+.vscode/
+.idea/
+
+# Locally compiled test executable
+/timer-tests
+
+# Distribution artifacts
+*.app/
+*.dSYM/
+*.ipa
+*.dmg
+*.pkg
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.p12
+*.p8
+*.mobileprovision
